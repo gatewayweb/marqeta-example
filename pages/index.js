@@ -20,11 +20,15 @@ export default function Home(props) {
   return (
     <>
       <Head>
-        <title>{page.seoTitle}</title>
+        <title>{page?.seoTitle}</title>
       </Head>
-      {page?.hero && <Hero data={page.hero} />}
+
+      {page?.hero && <Hero data={page?.hero} />}
+
       {highlights && <Highlights data={highlights} />}
+
       {slider && <Slider data={slider} />}
+
       {problems && <Problems data={problems} />}
     </>
   );

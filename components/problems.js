@@ -38,11 +38,11 @@ export default function Problems({ data }) {
           const [problem, solution] = item;
           return (
             <div key={index} className="relative w-full px-6 lg:px-12 lg:w-1/3">
-              <Image src="/img/icon-purple-minus.svg" height={28} width={28} />
+              <Image src="/img/icon-purple-minus.svg" height={28} width={28} alt="Problem Icon" />
               <div className="mt-6 mb-2 font-medium">{problem.title}</div>
               <div className="leading-7">{problem.subtitle}</div>
               <div className="solution bg-light-gray rounded-xl px-9 py-12 absolute top-24 left-[3%] w-[94%]">
-                <Image src="/img/icon-green-check.svg" height={28} width={28} />
+                <Image src="/img/icon-green-check.svg" height={28} width={28} alt="Solution Icon" />
                 <div className="mt-6 mb-2 font-medium">{solution.title}</div>
                 <div className="leading-7">{solution.subtitle}</div>
               </div>

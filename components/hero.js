@@ -18,6 +18,7 @@ export default function Hero({ data }) {
           objectFit="cover"
           objectPosition="bottom right"
           priority={true}
+          alt=""
         />
         <div className="relative container">
           <div className="container flex flex-wrap relative lg:flex-nowrap">
