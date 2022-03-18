@@ -18,8 +18,8 @@ export default function Problems({ data }) {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: container.current,
-        start: 'top 20%',
-        end: 'top top',
+        start: 'top 40%',
+        end: 'top 10%',
         scrub: true,
       },
     });
@@ -61,7 +61,7 @@ export default function Problems({ data }) {
   };
 
   return (
-    <div className="container pt-32 pb-96" ref={container}>
+    <div className="container pt-32 min-h-[3000px]" ref={container}>
       <div className="hidden lg:block">
         <h2 className="w-[900px] max-w-full mx-auto text-center">{data.title}</h2>
         <div className="flex flex-wrap mt-20">
