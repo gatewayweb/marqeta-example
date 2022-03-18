@@ -8,7 +8,7 @@ export default function LogoRiver({ logos }) {
       {logos &&
         logos.map((logo, index) => {
           return (
-            <div key={index} className="w-1/2 px-4 pb-4 lg:w-auto lg:px-10">
+            <div key={index} className="w-1/2 px-4 pb-4 lg:w-auto lg:px-10 flex justify-center">
               <Image src={logo?.url} width={logo?.width} height={logo?.height} alt="Company Logo" />
             </div>
           );

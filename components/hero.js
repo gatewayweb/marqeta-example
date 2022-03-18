@@ -11,7 +11,7 @@ export default function Hero({ data }) {
 
   return (
     <>
-      <div className="relative min-h-[600px] lg:min-h-[500px] flex">
+      <div className="relative min-h-[600px] xl:min-h-[700px] flex">
         <Image
           src="/img/hero-background.svg"
           layout="fill"

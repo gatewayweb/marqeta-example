@@ -18,7 +18,7 @@ export default function Problems({ data }) {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: container.current,
-        start: 'top 30%',
+        start: 'top 20%',
         end: 'top top',
         scrub: true,
       },
@@ -41,7 +41,7 @@ export default function Problems({ data }) {
 
   const MobileDisplay = ({ index }) => {
     return (
-      <div className="px-4 bg-light-gray py-8 rounded-xl">
+      <div className="px-4 bg-light-gray pt-8 h-full rounded-xl">
         {problems.map((item, key) => {
           const data = item[index];
 

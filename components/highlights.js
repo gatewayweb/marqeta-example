@@ -21,7 +21,7 @@ export default function Highlights({ data }) {
                     </div>
                   )}
                   <h3 className="mb-4 mt-8">{block.title}</h3>
-                  <div>{block.subtitle}</div>
+                  <div className="text-lg lg:text-base">{block.subtitle}</div>
                 </div>
               </div>
             );
