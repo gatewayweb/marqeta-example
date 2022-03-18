@@ -9,14 +9,6 @@ export default function Problems({ data }) {
   const container = useRef();
   const q = gsap.utils.selector(container);
 
-  const contentBlocks = data?.contentBlocksCollection?.items;
-  const size = 2;
-  const problems = Array.from({ length: Math.ceil(contentBlocks.length / size) }, (v, i) =>
-    contentBlocks.slice(i * size, i * size + size),
-  );
-
-  if (!problems || !problems.length) return <></>;
-
   useEffect(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -26,8 +18,17 @@ export default function Problems({ data }) {
         scrub: true,
       },
     });
+
     tl.from(q('.solution'), { y: 400 });
   }, []);
+
+  const contentBlocks = data?.contentBlocksCollection?.items;
+  const size = 2;
+  const problems = Array.from({ length: Math.ceil(contentBlocks.length / size) }, (v, i) =>
+    contentBlocks.slice(i * size, i * size + size),
+  );
+
+  if (!problems || !problems.length) return <></>;
 
   return (
     <div className="container pt-32 pb-96" ref={container}>
