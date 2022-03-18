@@ -63,9 +63,9 @@ export default function Slider({ data }) {
             const image = block?.imagesCollection?.items[0];
             return (
               <SwiperSlide key={index}>
-                <div className="bg-white min-h-[500px] flex flex-wrap lg:px-40 lg:pt-24 pb-20">
+                <div className="bg-white min-h-[400px] flex flex-wrap lg:px-40 lg:pt-24 pb-20">
                   {image && (
-                    <div className="relative w-full slide-image flex justify-center lg:order-2 lg:w-1/2 lg:pl-20">
+                    <div className="relative w-full slide-image flex justify-center h-[200px] lg:h-auto lg:order-2 lg:w-1/2 lg:pl-20">
                       <Image src={image?.url} layout="fill" objectFit="contain" alt={block.title} />
                     </div>
                   )}
